@@ -1,0 +1,444 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+
+*{
+
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'poppins',sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color:white;
+}
+body{
+  background-color: black;
+  /* min-width: 100%;
+  min-height: 100vh; */
+}
+html{
+  scroll-behavior: smooth;
+}
+.nav-bar{
+  height: 60px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 5% ;
+  align-items: center;
+  position: fixed;
+  z-index: 100;
+  background-color:black;
+}
+.navbar-logo{
+  width: 10%;
+  padding: 1% 0px;
+}
+.navbar-logo img{
+  width: 100%;
+  padding-top: 15px;
+  
+}
+.nav-bar.navbar-items{
+ width: 20%;
+ padding-left: 10px;
+}
+.navbar-items ul{
+  display: flex;
+  gap:20px;
+  list-style: none;
+ 
+ 
+}
+.navbar-items ul li{
+  position: relative;
+  padding: 5px 12px;
+  cursor: pointer;
+  transition: color 0.4s;
+  
+  font-size: 18px;
+  
+}
+.navbar-items ul li a{
+text-decoration: none;
+font-weight: 600;
+}
+
+.navbar-items ul li::after{
+  content: '';
+  position: absolute;
+  bottom: -0px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: aqua;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s;
+  
+}
+.navbar-items ul li:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.main-content{
+
+ height: 50vh;
+ width: 100%;
+
+
+
+
+}
+.main-content h1{
+  padding: 15% 17% 0% 17%;
+  font-size: 65px;
+  font-weight: 600;
+}
+.main-content h1 span{
+  color: aqua;
+  font-weight: 600;
+}
+.content-buttons{
+  padding: 4% 17%;
+}
+.content-buttons button{
+padding: 14px 20px;
+border-radius: 2px;
+background-color: transparent;
+border: 3px solid aqua;
+margin: 5px 4% 0px 0px ;
+
+
+}
+.content-buttons button a{
+  text-decoration: none;
+  color:white;
+  font-weight: 600;
+  font-size: 17px;
+}
+.content-buttons button:hover{
+  background: aqua;
+}
+.content-buttons button a:hover{
+  color: black;
+
+}
+.tera-spin{
+ 
+  background: rgb(16, 218, 218) !important;
+}
+.tera-spin:hover{
+  border: 3px solid gray;
+}
+.tera-spin a{
+  color: black !important;
+  
+}
+.tera-spin a:hover{
+  color: white !important;
+}
+.fa-solid{
+  color: black;
+  font-size: 18px;
+}
+.fa-arrow-right{
+  color: white;
+  font-size: 18px;
+}
+.fa-arrow-right:hover{
+  color: black !important;
+}
+.fa-solid:hover{
+  color: white;
+}
+.tera-spin:hover{
+
+  background: black !important ;
+}
+.second-page{
+  width: 100%;
+  min-height: 100vh;
+  margin-top: 25%;
+  padding: 4% 10%;
+}
+.second-page h1{
+  margin-top: 6%;
+  font-size: 40px;
+  font-weight: 700;
+  padding-bottom: 1%;
+  text-transform: uppercase;
+}
+.second-page hr{
+
+  max-width: 18%;
+  border: none;
+  height: 20px;
+  background-color: aqua;
+  
+}
+.text-container{
+   height: 100px;
+margin-top: 5%;
+margin-bottom: 4%;
+
+
+   
+}
+.text-container span{
+
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.text-container p{
+  color: lightgray;
+}
+.second-p{
+display: flex;
+align-items: center;
+}
+.second-p .percentage-1{
+width: 40%;
+background:white;
+height: 20px;
+margin-right: 10px;
+
+}
+.percentage-1 .cal{
+  width: 90%;
+  background-color: aqua !important;
+  height: 20px;
+}
+.second-p h1{
+  margin-top: 0;
+  padding-top: 1%;
+  padding-left: 2%;
+}
+.second-p1{
+  display: flex;
+  align-items: center;
+  }
+  .second-p1 .percentage-2{
+  width: 40%;
+  background:white;
+  height: 20px;
+  margin-right: 10px;
+  
+  }
+  .percentage-2 .cal{
+    width: 80%;
+    background-color: aqua !important;
+    height: 20px;
+  }
+  .second-p1 h1{
+    margin-top: 0;
+    padding-top: 1%;
+    padding-left: 2%;
+  }
+ .third-page{
+   min-height: 100vh;
+   width: 100%;
+ 
+   margin-top: 20%; 
+   padding: 2% 6%;
+ }
+ .images-third{
+  display: flex;
+  flex-wrap: wrap;
+ 
+
+ }
+ .images-third div{
+  width: 25%;
+  padding: 2% 2% 2% 0;
+ }
+ .images-third div img{
+  width: 100%;
+
+  transition: 0.5s ease-in-out;
+
+
+ }
+ .images-third div img:hover{
+   
+   transform: translateY(-12px);
+   
+ }
+ .images-third div p{
+  text-align: center;
+  font-weight: 400;
+  font-size: larger;
+  margin-top: 15px;
+ }
+ .heading h1{
+  margin-top: 6%;
+  font-size: 40px;
+  font-weight: 700;
+  padding-bottom: 1%;
+  text-transform: uppercase;
+ }
+.heading hr{
+
+  max-width: 18%;
+  border: none;
+  height: 20px;
+  background-color: aqua;
+}
+.heading{
+  padding-bottom: 2%;
+}
+.third-page p{
+  text-transform: uppercase;
+
+  
+}
+.fourth-section{
+  min-height: 100vh;
+  width: 100%;
+  padding: 3% 8%;
+}
+.fourth-section h1{
+  text-align: center;
+  font-size: 80px;
+  margin-top: 10%;
+}
+.container-buttons{
+  padding: 5% 20%;
+
+}
+.container-buttons button{
+  padding: 2% 12%;
+  margin: 5% 5%;
+  background-color: transparent;
+  border: 3px solid aqua;
+}
+.container-buttons button:hover{
+  background: aqua;
+
+}
+.container-buttons button a:hover{
+  color: black;
+  font-weight: 600;
+}
+.container-buttons button a{
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  font-weight: 600;
+
+}
+.container-four{
+  border: 6px solid aqua;
+  border-radius: 6px;
+  margin-top: 7%;
+}
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+  .navbar-items ul {
+    gap: 10px;
+  }
+  .main-content h1 {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 992px) {
+  .navbar-logo {
+    width: 15%;
+  }
+  .navbar-items ul li {
+    font-size: 16px;
+  }
+  .main-content h1 {
+    padding: 20% 10% 0 10%;
+    font-size: 40px;
+  }
+  .content-buttons {
+    padding: 5% 10%;
+  }
+  .content-buttons button a {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-items ul {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-top: 10px;
+  }
+  .navbar-items {
+    display: none;
+  }
+  .navbar-logo {
+    width: 20%;
+  }
+  .main-content h1 {
+    padding: 25% 5% 0 5%;
+    font-size: 35px;
+  }
+  .content-buttons {
+    padding: 6% 5%;
+    text-align: center;
+  }
+  .content-buttons button {
+    margin: 5px 0;
+  }
+  .images-third div {
+    width: 50%;
+    padding: 2%;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar-logo {
+    width: 30%;
+  }
+  .main-content h1 {
+    padding: 30% 5% 0 5%;
+    font-size: 30px;
+  }
+  .content-buttons button a {
+    font-size: 14px;
+  }
+  .second-page {
+    padding: 4% 5%;
+  }
+  .second-page h1 {
+    font-size: 30px;
+  }
+  .text-container span {
+    font-size: 16px;
+  }
+  .second-p .percentage-1, .second-p1 .percentage-2 {
+    width: 50%;
+  }
+  .images-third div {
+    width: 100%;
+    padding: 2%;
+  }
+  .fourth-section {
+    padding: 3% 5%;
+  }
+  .fourth-section h1 {
+    font-size: 50px;
+  }
+  .container-buttons {
+    padding: 5% 5%;
+  }
+  .container-buttons button {
+    padding: 2% 8%;
+    margin: 5% 2%;
+  }
+  .container-buttons button a {
+    font-size: 16px;
+  }
+  .second-page h2{
+    margin-top: 55%;
+  }
+  .normal{
+    margin-top: 10px !important;
+  }
+}
